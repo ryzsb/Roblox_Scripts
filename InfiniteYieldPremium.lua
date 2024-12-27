@@ -12,7 +12,7 @@ Players = cloneref(game:GetService("Players"))
 if not game:IsLoaded() then
     local notLoaded = Instance.new("Message")
     notLoaded.Parent = COREGUI
-    notLoaded.Text = "Infinite Yield Premium FE Premium FE is waiting for the game to load"
+    notLoaded.Text = "Infinite Yield Premium is waiting for the game to load"
     game.Loaded:Wait()
     notLoaded:Destroy()
 end
@@ -3820,7 +3820,7 @@ SaveChatlogs.MouseButton1Down:Connect(function()
 		if #scroll_2:GetChildren() > 0 then
 			notify("Loading",'Hold on a sec')
 			local placeName = CleanFileName(MarketplaceService:GetProductInfo(PlaceId).Name)
-			local writelogs = '-- Infinite Yield Premium FE Chat logs for "'..placeName..'"\n'
+			local writelogs = '-- Infinite Yield  Chat logs for "'..placeName..'"\n'
 			for _, child in pairs(scroll_2:GetChildren()) do
 				writelogs = writelogs..'\n'..child.Text
 			end
@@ -12750,5 +12750,5 @@ task.spawn(function()
 	Credits:Destroy()
 	IntroBackground:Destroy()
 	minimizeHolder()
-	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield Premium FE Premium FE may have issues or features that are not functioning correctly.") end
+	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield Premium FE may have issues or features that are not functioning correctly.") end
 end)
